@@ -1,33 +1,33 @@
 # 🌺 Orchid Shop - Fullstack Project
 
-Orchid Shop là hệ thống bán hoa lan trực tuyến gồm **Backend (ASP.NET Core Web API)** và **Frontend (React + Vite)**, hỗ trợ quản lý sản phẩm, đơn hàng, người dùng, phân quyền, xác thực JWT, và tích hợp ChatBot AI.
+Orchid Shop is an online orchid flower sales system including **Backend (ASP.NET Core Web API)** and **Frontend (React + Vite)**, supporting product management, orders, users, roles, JWT authentication, and AI ChatBot integration.
 
-## 📦 Cấu trúc dự án
+## 📦 Project Structure
 
 ```
 Orchid-Shop/
 ├── Lab03_CE171488_IdentityAjax_FE/           # Frontend (React + Vite)
-│   └── README.md                             # Hướng dẫn chi tiết FE
+│   └── README.md                             # Detailed FE guide
 ├── Lab03_CE171488_IdetityAjax_ASP.NETCoreWebAPI/ # Backend (ASP.NET Core Web API)
-│   └── ReadMe.md                             # Hướng dẫn chi tiết BE
-└── README.md                                 # File này
+│   └── ReadMe.md                             # Detailed BE guide
+└── README.md                                 # This file
 ```
 
-## ✨ Tính năng nổi bật
+## ✨ Key Features
 
-- Quản lý sản phẩm, danh mục, đơn hàng, người dùng, vai trò
-- Xác thực & phân quyền JWT (Admin/Customer)
-- Giao diện hiện đại, responsive, trải nghiệm mượt mà
-- ChatBot AI tư vấn sản phẩm (Google Gemini API)
-- Email thông báo (đăng ký, xác nhận đơn hàng)
-- API RESTful, tài liệu Swagger
+- Manage products, categories, orders, users, roles
+- JWT authentication & authorization (Admin/Customer)
+- Modern, responsive UI, smooth user experience
+- AI ChatBot for product consultation (Google Gemini API)
+- Email notifications (registration, order confirmation)
+- RESTful API, Swagger documentation
 
-## 🚀 Công nghệ sử dụng
+## 🚀 Technologies Used
 
 - **Backend:** .NET 8, ASP.NET Core Web API, Entity Framework Core, SQL Server, JWT, Swagger, MailKit
 - **Frontend:** React 19, Vite, CSS3, Google Gemini API
 
-## ⚡ Hướng dẫn cài đặt nhanh
+## ⚡ Quick Setup Guide
 
 ### 1. Clone repository
 
@@ -36,45 +36,45 @@ git clone <repository-url>
 cd Orchid-Shop
 ```
 
-### 2. Cài đặt Backend
+### 2. Setup Backend
 
 ```bash
 cd Lab03_CE171488_IdetityAjax_ASP.NETCoreWebAPI
-# Cấu hình DB, JWT, SMTP trong appsettings.json
-# Khởi tạo database:
+# Configure DB, JWT, SMTP in appsettings.json
+# Initialize database:
 dotnet restore
 dotnet build
-# Tạo migration và update database nếu cần
+# Create migration and update database if needed
 # dotnet ef migrations add InitialCreate -p DataAccess
 # dotnet ef database update -p DataAccess
 dotnet run
 ```
 
-### 3. Cài đặt Frontend
+### 3. Setup Frontend
 
 ```bash
 cd ../Lab03_CE171488_IdentityAjax_FE
 npm install
-# Tạo file .env từ env.template và cấu hình API URL, Gemini API key nếu dùng ChatBot
+# Create .env file from env.template and configure API URL, Gemini API key if using ChatBot
 npm run dev
 ```
 
-## 📚 Tài liệu chi tiết
+## 📚 Detailed Documentation
 
 - [Frontend README](./Lab03_CE171488_IdentityAjax_FE/README.md)
 - [Backend README](./Lab03_CE171488_IdetityAjax_ASP.NETCoreWebAPI/ReadMe.md)
 
-## 🤝 Đóng góp
+## 🤝 Contribution
 
-1. Fork repository
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit & push
-4. Tạo Pull Request
+4. Create a Pull Request
 
 ## 📄 License
 
-MIT License. Xem file LICENSE để biết thêm chi tiết.
+MIT License. See LICENSE file for more details.
 
 ---
 
-⭐ Nếu project hữu ích, hãy cho một star nhé!
+⭐ If you find this project useful, please give it a star!
