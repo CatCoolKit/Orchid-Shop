@@ -14,7 +14,7 @@ namespace Services.Implementations
     public class EmailService : IEmailService
     {
         private readonly SmtpSettings _smtpSettings;
-        private String emailSendFrom = "nam022831@gmail.com";
+        private String emailSendFrom = "a@gmail.com";
 
         public EmailService(IOptions<SmtpSettings> smtpSettings)
         {
