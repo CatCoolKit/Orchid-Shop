@@ -1,4 +1,4 @@
-# 🌺 Orchid Shop - Fullstack Project
+# 🌺 Orchid Shop - Project
 
 Orchid Shop is an online orchid flower sales system including **Backend (ASP.NET Core Web API)** and **Frontend (React + Vite)**, supporting product management, orders, users, roles, JWT authentication, and AI ChatBot integration.
 
