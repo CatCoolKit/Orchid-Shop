@@ -12,9 +12,9 @@ namespace DataAccess
     {
         private readonly OrchidShopDbContext _context; 
 
-        public OrderDAO(OrchidShopDbContext context)
+        public OrderDAO()
         {
-            _context = context;
+            _context = new OrchidShopDbContext();
         }
 
         public void SaveOrder(Order order)

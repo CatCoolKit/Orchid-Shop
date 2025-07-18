@@ -16,10 +16,21 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionStringDB");
+builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IOrchidRepository, OrchidRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
+builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 
-builder.Services.AddDbContext<OrchidShopDbContext>(options =>
-    options.UseSqlServer(connectionString));
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IOrchidService, OrchidService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IManageJwt, ManageJwt>();
 
 builder.Services.AddApplicationServices();
 

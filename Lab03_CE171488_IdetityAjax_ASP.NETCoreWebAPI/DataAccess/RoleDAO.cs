@@ -12,9 +12,9 @@ namespace DataAccess
     {
         private readonly OrchidShopDbContext _context; 
 
-        public RoleDAO(OrchidShopDbContext context)
+        public RoleDAO()
         {
-            _context = context;
+            _context = new OrchidShopDbContext();
         }
 
         public List<Role> GetRoles()

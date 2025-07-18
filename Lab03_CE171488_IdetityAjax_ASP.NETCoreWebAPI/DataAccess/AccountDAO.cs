@@ -13,9 +13,9 @@ namespace DataAccess
     {
         private readonly OrchidShopDbContext _context; 
 
-        public AccountDAO(OrchidShopDbContext context)
+        public AccountDAO()
         {
-            _context = context; 
+            _context = new OrchidShopDbContext(); 
         }
 
         public Account FindAccountByEmail(string email)

@@ -12,9 +12,9 @@ namespace DataAccess
     {
         private readonly OrchidShopDbContext _context;
 
-        public CategoryDAO(OrchidShopDbContext context)
+        public CategoryDAO()
         {
-            _context = context;
+            _context = new OrchidShopDbContext();
         }
 
         public List<Category> GetCategories()
